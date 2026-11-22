@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Мир Путешествий - Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="page">
+        <nav class="menu">
+            <a class="menu__link" href="index.html">Главная</a>
+            <a class="menu__link" href="tours.html">Наши туры</a>
+            <a class="menu__link" href="gallery.html">Галерея</a>
+            <a class="menu__link" href="contacts.html">Контакты</a>
+        </nav>
+
+        <h1 class="page__title">Оставить заявку на подбор тура</h1>
+
+        <form class="form" id="tour-form">
+            <div class="form__group">
+                <label class="form__label" for="client-name">Ваше имя:</label>
+                <input class="form__input" type="text" id="client-name" required placeholder="Иван Иванов">
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="client-phone">Номер телефона:</label>
+                <input class="form__input" type="tel" id="client-phone" required placeholder="+7 (999) 000-00-00">
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="travel-date">Желаемая дата вылета:</label>
+                <input class="form__input" type="date" id="travel-date" required>
+            </div>
+
+            <div class="form__group form__group--checkbox">
+                <input type="checkbox" id="agreement" required>
+                <label for="agreement">Согласен на обработку персональных данных</label>
+            </div>
+
+            <button class="form__button" type="submit">Отправить заявку</button>
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
